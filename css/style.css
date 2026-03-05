@@ -750,3 +750,81 @@ margin-bottom: 10px;
 .promo-card button {
 margin-top: 25px;   /* опускаем кнопку ниже текста */
 }
+/* Врачи */
+.doctor-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 40px;
+}
+
+.doctor-card {
+background: white;
+padding: 30px;
+border-radius: 25px;
+border: 3px solid #d7f3ee;
+box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+transition: 0.3s;
+display: flex;
+flex-direction: column;
+}
+
+.doctor-card:hover {
+transform: translateY(-8px);
+border-color: #1abc9c;
+}
+
+.doctor-card img {
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+border-radius: 20px;
+margin-bottom: 20px;
+}
+
+.doctor-role {
+color: #1abc9c;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+.skills {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+margin: 15px 0;
+}
+
+.skills span {
+background: #e8f6f3;
+padding: 6px 12px;
+border-radius: 20px;
+font-size: 14px;
+}
+
+.schedule {
+background: #f7fbfa;
+padding: 15px;
+border-radius: 15px;
+margin-top: 10px;
+}
+
+.achievements {
+margin-top: 10px;
+font-weight: 500;
+color: #16a085;
+}
+
+.steps-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+.step-card {
+background: white;
+padding: 25px;
+border-radius: 20px;
+border: 3px solid #d7f3ee;
+text-align: center;
+box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
