@@ -746,3 +746,7 @@ margin-bottom: 20px;
 .hero-box p {
 margin-bottom: 10px;
 }
+/* Отступ кнопок в блоке Акции */
+.promo-card button {
+margin-top: 25px;   /* опускаем кнопку ниже текста */
+}
