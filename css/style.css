@@ -480,20 +480,24 @@ cursor: pointer;
 /* ===== СВЕТЛЫЕ КНОПКИ ===== */
 
 .btn-main {
-background: #ffffff;
-color: #019875;
-padding: 15px 30px;
-border-radius: 14px;
-border: 2px solid #00b894;
-font-weight: 600;
-cursor: pointer;
-text-decoration: none;
-display: inline-block;
-transition: all 0.3s ease;
-box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  background: #ffffff;
+  color: #16a085;
+  border: 2px solid #16a085;
+  border-radius: 40px;
+  padding: 16px 34px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-main:hover {
+  background: #16a085;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
 background: #e8f8f5;
 transform: translateY(-4px);
 box-shadow: 0 10px 25px rgba(0,0,0,0.15);
@@ -613,18 +617,24 @@ cursor: pointer;
 }
 /* Кнопки */
 .btn-main {
-background: linear-gradient(135deg, #159a86, #0f766e);
-color: white;
-border-radius: 30px;
-border: 3px solid #ffffff;
-padding: 14px 32px;
-font-weight: 600;
-transition: 0.3s;
-cursor: pointer;
-box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  background: #ffffff;
+  color: #16a085;
+  border: 2px solid #16a085;
+  border-radius: 40px;
+  padding: 16px 34px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-main:hover {
+  background: #16a085;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
 transform: translateY(-4px);
 box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
@@ -1083,7 +1093,15 @@ color: #1abc9c;
 }
 /* ===== Современные кнопки ===== */
 
-.btn-main {
+block;
+}
+
+.btn-main:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(26,188,156,0.6);
+}
+
+.hero-buttons .b.btn-main {
 background: linear-gradient(135deg, #1abc9c, #16a085);
 color: white;
 padding: 16px 32px;
@@ -1094,15 +1112,7 @@ cursor: pointer;
 box-shadow: 0 10px 30px rgba(26,188,156,0.4);
 transition: all 0.3s ease;
 text-decoration: none;
-display: inline-block;
-}
-
-.btn-main:hover {
-transform: translateY(-5px);
-box-shadow: 0 15px 40px rgba(26,188,156,0.6);
-}
-
-.hero-buttons .btn-main {
+display: inline-tn-main {
 animation: glow 2s infinite alternate;
 }
 
