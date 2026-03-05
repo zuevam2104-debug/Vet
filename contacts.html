@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Контакты | VetCare</title>
+<title>Контакты — VetCare 🐾</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,74 +19,71 @@
 <li><a href="doctors.html">👩‍⚕️ Врачи</a></li>
 <li><a href="contacts.html">📞 Контакты</a></li>
 </ul>
-
 </div>
 </header>
 
-<section class="page-hero contacts-hero">
-    <section class="section emergency">
-<div class="container">
-<h2>🚑 Экстренная помощь 24/7</h2>
-<p>При угрозе жизни питомца звоните немедленно:</p>
-<h3>+7 (900) 999-99-99</h3>
-</div>
-</section>
-    <h1>Свяжитесь с нами</h1>
-</section>
+<!-- CONTACTS -->
+<section class="contacts-section">
+  <div class="container">
+    
+    <h2 class="section-title">📞 Контакты VetCare 🐾</h2>
 
-<section class="section container two-column">
+    <div class="contacts-grid">
 
-    <div>
-        <h3>Контактная информация</h3>
-        <p><strong>Телефон:</strong> +7 (900) 123-45-67</p>
-        <p><strong>Email:</strong> info@vetcare.ru</p>
-        <p><strong>Адрес:</strong> г. Москва, ул. Центральная, 15</p>
+      <!-- Информация -->
+      <div class="contact-info-card">
+        <h3>🏥 Наш адрес</h3>
+        <p>г. Москва, ул. Заботы, 15</p>
+
+        <h3>📱 Телефон</h3>
+        <p>+7 (900) 999-99-99</p>
+
+        <h3>📧 Email</h3>
+        <p>info@vetcare.ru</p>
+
+        <h3>⏰ Часы работы</h3>
+        <p>Пн–Вс: 09:00 – 21:00</p>
+
+        <div class="contact-extra">
+          💚 Мы отвечаем в течение 15 минут  
+          🐾 Работаем без выходных  
+          🚑 Экстренная помощь 24/7
+        </div>
+      </div>
+
+      <!-- Форма -->
+      <div class="contact-form-card">
+        <h3>📝 Написать нам</h3>
+
+        <form class="contact-form" onsubmit="showMessage(event)">
+          <input type="text" placeholder="Ваше имя" required>
+          <input type="tel" placeholder="Телефон" required>
+          <input type="email" placeholder="Email">
+          <textarea placeholder="Ваше сообщение"></textarea>
+          <button type="submit" class="btn-main">Отправить заявку ✨</button>
+        </form>
+
+        <div id="success-message" class="success-message">
+          ✅ Ваша заявка отправлена!
+        </div>
+
+      </div>
+
     </div>
 
-    <div>
-        <iframe 
-        src="https://maps.google.com/maps?q=moscow&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        width="100%" height="300" style="border:0;">
-        </iframe>
-    </div>
-
-</section>
-<section class="section container">
-    <h2>Часто задаваемые вопросы</h2>
-
-    <div class="faq-item">
-        <h4>Нужно ли записываться заранее?</h4>
-        <p>Да, рекомендуем предварительную запись.</p>
-    </div>
-
-    <div class="faq-item">
-        <h4>Работаете ли вы ночью?</h4>
-        <p>Да, круглосуточно без выходных.</p>
-    </div>
-</section>
-<section class="section container">
-<h2>Онлайн запись</h2>
-
-<form class="contact-form">
-<input type="text" placeholder="Ваше имя" required>
-<input type="tel" placeholder="Телефон" required>
-<input type="email" placeholder="Email">
-<textarea placeholder="Комментарий"></textarea>
-<button class="btn">Отправить</button>
-</form>
-</section>
-<section class="section container">
-<h2>Мы в социальных сетях</h2>
-<p>Следите за новостями и полезными советами:</p>
-<p>
-Instagram | VK | Telegram | YouTube
-</p>
+  </div>
 </section>
 
 <footer>
-    <p>© 2026 VetCare Pro</p>
+<p>© 2026 VetCare 🐾 | Забота с любовью 💚</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+function showMessage(event) {
+  event.preventDefault();
+  document.getElementById("success-message").style.display = "block";
+}
+</script>
+
 </body>
 </html>
