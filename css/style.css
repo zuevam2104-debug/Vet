@@ -477,18 +477,40 @@ font-size: 24px;
 cursor: pointer;
 }
 /* Кнопки */
+/* ===== СВЕТЛЫЕ КНОПКИ ===== */
+
 .btn-main {
-background: linear-gradient(135deg, #1abc9c, #16a085);
-color: white;
-border-radius: 30px;
-border: none;
-padding: 12px 28px;
+background: #ffffff;
+color: #019875;
+padding: 15px 30px;
+border-radius: 14px;
+border: 2px solid #00b894;
 font-weight: 600;
-transition: 0.3s;
 cursor: pointer;
+text-decoration: none;
+display: inline-block;
+transition: all 0.3s ease;
+box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
 .btn-main:hover {
+background: #e8f8f5;
+transform: translateY(-4px);
+box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Отступы между кнопками */
+.hero-buttons {
+display: flex;
+gap: 20px;
+justify-content: center;
+margin-top: 25px;
+}
+
+.center-btn {
+text-align: center;
+margin-top: 25px;
+}
 transform: translateY(-3px);
 box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
