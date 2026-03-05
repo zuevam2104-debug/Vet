@@ -728,3 +728,21 @@ right: 20px;
 font-size: 24px;
 cursor: pointer;
 }
+/* Hero — отступ кнопок вниз */
+.hero-buttons {
+margin-top: 40px;   /* главный отступ вниз */
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+/* Немного воздуха между заголовком и текстом */
+.hero-box h1 {
+margin-bottom: 20px;
+}
+
+/* Немного воздуха перед кнопками */
+.hero-box p {
+margin-bottom: 10px;
+}
