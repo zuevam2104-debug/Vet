@@ -9,130 +9,131 @@
 <body>
 
 <header>
-    <div class="container nav-container">
-        <div class="logo">🐾 VetCare</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="about.html">О клинике</a></li>
-                <li><a href="services.html" class="active">Услуги</a></li>
-                <li><a href="doctors.html">Врачи</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="burger">☰</div>
-    </div>
+<div class="container nav-container">
+<div class="logo">🐾 VetCare</div>
+<ul class="nav-links">
+<li><a href="index.html">Главная</a></li>
+<li><a href="about.html">О клинике</a></li>
+<li><a href="services.html">Услуги</a></li>
+<li><a href="doctors.html">Врачи</a></li>
+<li><a href="contacts.html">Контакты</a></li>
+</ul>
+</div>
 </header>
 
-<section class="page-hero services-hero">
-    <section class="section container">
+<section class="page-hero">
+<h1>Наши услуги</h1>
+<p>Полный спектр ветеринарной помощи</p>
+</section>
+
+<!-- Основные направления -->
+<section class="section container">
 <h2>Основные направления</h2>
 
-<div class="cards">
+<div class="service-grid">
 
-<div class="card service therapy">
+<div class="service-card">
 <h3>Терапия</h3>
-<p>Диагностика и лечение инфекционных и хронических заболеваний.</p>
 <ul>
-<li>Осмотр и консультация</li>
-<li>Назначение лечения</li>
-<li>Контроль состояния</li>
+<li>Первичный и повторный приём</li>
+<li>Лечение инфекций</li>
+<li>Лечение хронических заболеваний</li>
+<li>Подбор диеты</li>
 </ul>
+<p class="price">от 1500 ₽</p>
 </div>
 
-<div class="card service surgery">
+<div class="service-card">
 <h3>Хирургия</h3>
-<p>Плановые и экстренные операции любой сложности.</p>
 <ul>
-<li>Стерилизация</li>
-<li>Кастрация</li>
-<li>Удаление новообразований</li>
+<li>Стерилизация / кастрация</li>
+<li>Удаление опухолей</li>
+<li>Операции при травмах</li>
+<li>Абдоминальная хирургия</li>
 </ul>
+<p class="price">от 4000 ₽</p>
 </div>
 
-<div class="card service diagnostics">
+<div class="service-card">
 <h3>Диагностика</h3>
-<p>Современное оборудование для точного результата.</p>
 <ul>
 <li>УЗИ</li>
 <li>Рентген</li>
 <li>Анализы крови</li>
+<li>Биохимия</li>
 </ul>
+<p class="price">от 1200 ₽</p>
+</div>
+
+<div class="service-card">
+<h3>Кардиология</h3>
+<ul>
+<li>ЭКГ</li>
+<li>ЭхоКГ</li>
+<li>Мониторинг давления</li>
+<li>Лечение сердечных патологий</li>
+</ul>
+<p class="price">от 2000 ₽</p>
+</div>
+
+<div class="service-card">
+<h3>Стоматология</h3>
+<ul>
+<li>Чистка зубов</li>
+<li>Удаление зубного камня</li>
+<li>Удаление зубов</li>
+</ul>
+<p class="price">от 2500 ₽</p>
+</div>
+
+<div class="service-card">
+<h3>Вакцинация</h3>
+<ul>
+<li>Комплексные вакцины</li>
+<li>Прививки от бешенства</li>
+<li>Международный ветпаспорт</li>
+</ul>
+<p class="price">от 1800 ₽</p>
 </div>
 
 </div>
 </section>
-    <h1>Наши услуги</h1>
+
+<!-- Как проходит лечение -->
+<section class="section light-bg">
+<div class="container">
+<h2>Как проходит лечение</h2>
+
+<div class="steps">
+<div>
+<h3>1. Осмотр</h3>
+<p>Первичная консультация и диагностика.</p>
+</div>
+<div>
+<h3>2. Обследование</h3>
+<p>Анализы, УЗИ или рентген при необходимости.</p>
+</div>
+<div>
+<h3>3. План лечения</h3>
+<p>Индивидуальный подход и рекомендации.</p>
+</div>
+<div>
+<h3>4. Контроль</h3>
+<p>Повторный приём и мониторинг состояния.</p>
+</div>
+</div>
+</div>
 </section>
 
-<section class="section container">
-
-    <div class="filter-buttons">
-        <button onclick="filterServices('all')">Все</button>
-        <button onclick="filterServices('therapy')">Терапия</button>
-        <button onclick="filterServices('surgery')">Хирургия</button>
-        <button onclick="filterServices('diagnostics')">Диагностика</button>
-    </div>
-
-    <div class="cards services-grid">
-
-        <div class="card service therapy">
-            <h3>Общий осмотр</h3>
-            <p>Полная диагностика состояния здоровья.</p>
-        </div>
-
-        <div class="card service surgery">
-            <h3>Хирургические операции</h3>
-            <p>Плановые и экстренные вмешательства.</p>
-        </div>
-
-        <div class="card service diagnostics">
-            <h3>УЗИ и рентген</h3>
-            <p>Современная аппаратура для точной диагностики.</p>
-        </div>
-
-        <div class="card service therapy">
-            <h3>Вакцинация</h3>
-            <p>Профилактические прививки.</p>
-        </div>
-
-    </div>
-</section>
-<section class="section container">
-    <h2>Прайс-лист</h2>
-    <table class="price-table">
-        <tr>
-            <th>Услуга</th>
-            <th>Цена</th>
-        </tr>
-        <tr>
-            <td>Первичный осмотр</td>
-            <td>1500 ₽</td>
-        </tr>
-        <tr>
-            <td>Вакцинация</td>
-            <td>1200 ₽</td>
-        </tr>
-        <tr>
-            <td>УЗИ</td>
-            <td>2000 ₽</td>
-        </tr>
-    </table>
-</section>
+<!-- Пакеты -->
 <section class="section container">
 <h2>Комплексные пакеты</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Базовый осмотр</h3>
-<p>Первичный приём + анализы</p>
-<strong>2500 ₽</strong>
-</div>
-
-<div class="card">
-<h3>Щенок/Котёнок</h3>
-<p>Осмотр + вакцинация + консультация по питанию</p>
+<h3>Щенок / Котёнок</h3>
+<p>Осмотр + вакцинация + консультация</p>
 <strong>3500 ₽</strong>
 </div>
 
@@ -142,13 +143,50 @@
 <strong>9000 ₽</strong>
 </div>
 
+<div class="card">
+<h3>Хирургический пакет</h3>
+<p>Операция + наркоз + наблюдение</p>
+<strong>от 12000 ₽</strong>
+</div>
+
+</div>
+</section>
+
+<!-- Почему мы -->
+<section class="section light-bg">
+<div class="container">
+<h2>Почему наши услуги выбирают</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Современные технологии</h3>
+<p>Оборудование экспертного уровня.</p>
+</div>
+
+<div class="card">
+<h3>Опытные врачи</h3>
+<p>Более 30 лет суммарного опыта.</p>
+</div>
+
+<div class="card">
+<h3>Прозрачные цены</h3>
+<p>Без скрытых платежей.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="emergency">
+<div class="container">
+<h2>Запишитесь на консультацию уже сегодня</h2>
+<a href="contacts.html" class="btn">Оставить заявку</a>
 </div>
 </section>
 
 <footer>
-    <p>© 2026 VetCare Pro</p>
+<p>© 2026 VetCare</p>
 </footer>
 
-<script src="js/script.js"></script>
 </body>
 </html>

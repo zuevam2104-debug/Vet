@@ -346,3 +346,87 @@ footer {
     margin-top: 15px;
     color: #0d6efd;
 }
+.hero {
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1517849845537-4d257902454a');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 120px 0;
+text-align: center;
+}
+
+.hero-buttons {
+margin-top: 20px;
+display: flex;
+gap: 20px;
+justify-content: center;
+}
+
+.btn-outline {
+background: transparent;
+border: 2px solid white;
+color: white;
+}
+
+.light-bg {
+background: #f5f7fa;
+}
+
+.center-btn {
+display: block;
+margin: 30px auto 0;
+width: fit-content;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 15px;
+margin-top: 20px;
+}
+
+.gallery img {
+width: 100%;
+border-radius: 15px;
+}
+
+.faq p {
+margin-bottom: 15px;
+}
+.service-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 30px;
+}
+
+.service-card {
+background: white;
+padding: 25px;
+border-radius: 15px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+transition: 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-5px);
+}
+
+.service-card ul {
+padding-left: 20px;
+margin: 15px 0;
+}
+
+.price {
+font-weight: bold;
+color: #0d6efd;
+}
+
+.steps {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+text-align: center;
+margin-top: 30px;
+}
