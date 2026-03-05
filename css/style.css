@@ -1242,3 +1242,82 @@ box-shadow: 0 18px 50px rgba(26,188,156,0.7);
     grid-template-columns: 1fr;
   }
 }
+/* ===== CONTACTS ULTRA DESIGN ===== */
+
+.contacts-pro {
+  padding: 120px 0;
+  background: linear-gradient(135deg, #dff7f2, #c8f0e8);
+}
+
+.contacts-pro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  margin-top: 60px;
+}
+
+.contacts-pro-card {
+  background: white;
+  padding: 60px;
+  border-radius: 40px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.1);
+  border: 5px solid #1abc9c;
+  transition: 0.4s;
+}
+
+.contacts-pro-card:hover {
+  transform: translateY(-10px);
+}
+
+.contacts-pro-card h3 {
+  margin-top: 25px;
+  color: #16a085;
+}
+
+.contacts-pro-card p {
+  margin-bottom: 10px;
+}
+
+/* форма */
+.contacts-pro-card input,
+.contacts-pro-card textarea {
+  width: 100%;
+  padding: 16px;
+  margin-top: 18px;
+  border-radius: 20px;
+  border: 2px solid #c8f0e8;
+  background: #f9fffe;
+  font-size: 14px;
+}
+
+.contacts-pro-card textarea {
+  min-height: 120px;
+}
+
+.contacts-pro-card input:focus,
+.contacts-pro-card textarea:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 0 4px rgba(26,188,156,0.2);
+}
+
+.contacts-pro-card button {
+  margin-top: 30px;
+}
+
+.contacts-success {
+  display: none;
+  margin-top: 25px;
+  padding: 20px;
+  background: #1abc9c;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .contacts-pro-grid {
+    grid-template-columns: 1fr;
+  }
+}
