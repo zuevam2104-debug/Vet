@@ -589,3 +589,142 @@ right: 20px;
 font-size: 24px;
 cursor: pointer;
 }
+/* Кнопки */
+.btn-main {
+background: linear-gradient(135deg, #159a86, #0f766e);
+color: white;
+border-radius: 30px;
+border: 3px solid #ffffff;
+padding: 14px 32px;
+font-weight: 600;
+transition: 0.3s;
+cursor: pointer;
+box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.btn-main:hover {
+transform: translateY(-4px);
+box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Hero стеклянный */
+.hero-box {
+background: rgba(255,255,255,0.15);
+padding: 60px;
+border-radius: 30px;
+border: 3px solid rgba(255,255,255,0.6);
+backdrop-filter: blur(6px);
+}
+
+/* Центрирование */
+.center-btn {
+text-align: center;
+margin-top: 30px;
+}
+
+/* Карточки */
+.card {
+background: white;
+padding: 30px;
+border-radius: 20px;
+border: 3px solid #d7f3ee;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-6px);
+border-color: #1abc9c;
+}
+
+/* Экстренная помощь */
+.emergency-new {
+background: linear-gradient(135deg, #1abc9c, #16a085);
+padding: 80px 0;
+color: white;
+text-align: center;
+border-top: 5px solid #0f766e;
+border-bottom: 5px solid #0f766e;
+}
+
+/* Команда */
+.team-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px;
+}
+
+.team-card {
+background: white;
+padding: 25px;
+border-radius: 20px;
+text-align: center;
+border: 3px solid #c8ebe6;
+box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+transition: 0.3s;
+}
+
+.team-card:hover {
+transform: translateY(-6px);
+}
+
+.team-card img {
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+border-radius: 15px;
+margin-bottom: 15px;
+}
+
+/* Акции */
+.promo-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+
+.promo-card {
+background: white;
+padding: 40px;
+border-radius: 25px;
+box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+border: 4px solid #d9f5f1;
+transition: 0.3s;
+text-align: center;
+}
+
+.promo-card:hover {
+transform: translateY(-6px);
+}
+
+/* Модальное окно */
+.modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background: white;
+padding: 40px;
+border-radius: 25px;
+width: 90%;
+max-width: 500px;
+box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+position: relative;
+border: 4px solid #1abc9c;
+}
+
+.close {
+position: absolute;
+top: 15px;
+right: 20px;
+font-size: 24px;
+cursor: pointer;
+}
