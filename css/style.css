@@ -827,4 +827,59 @@ border-radius: 20px;
 border: 3px solid #d7f3ee;
 text-align: center;
 box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}/* Статус */
+.doctor-status {
+background: #e8f6f3;
+color: #0f766e;
+padding: 6px 12px;
+border-radius: 20px;
+font-size: 14px;
+margin-bottom: 10px;
+display: inline-block;
+}
+
+/* Рейтинг */
+.rating {
+margin: 10px 0;
+font-weight: 600;
+color: #f4b400;
+}
+
+.rating span {
+color: #333;
+font-weight: normal;
+margin-left: 5px;
+}
+
+/* Сертификаты */
+.certificates {
+margin-top: 10px;
+background: #f7fbfa;
+padding: 10px;
+border-radius: 10px;
+}
+
+/* Отзывы */
+.reviews {
+margin-top: 15px;
+background: #f0faf8;
+padding: 15px;
+border-radius: 15px;
+}
+
+.reviews h4 {
+margin-bottom: 8px;
+}
+
+/* Бронирование */
+.booking {
+margin-top: 15px;
+}
+
+.booking select {
+width: 100%;
+padding: 8px;
+border-radius: 10px;
+border: 2px solid #d7f3ee;
+margin-top: 5px;
 }
