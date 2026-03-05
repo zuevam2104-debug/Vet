@@ -23,10 +23,6 @@ margin: auto;
 padding: 80px 0;
 }
 
-h1, h2, h3 {
-margin-bottom: 20px;
-}
-
 .section-title {
 text-align: center;
 font-size: 32px;
@@ -107,6 +103,11 @@ backdrop-filter: blur(6px);
 
 .hero h1 {
 font-size: 46px;
+margin-bottom: 20px;
+}
+
+.hero p {
+margin-bottom: 10px;
 }
 
 .hero-buttons {
@@ -117,26 +118,24 @@ justify-content: center;
 flex-wrap: wrap;
 }
 
-/* ===== КНОПКИ (ЕДИНЫЙ СТИЛЬ) ===== */
+/* ===== КНОПКИ ===== */
 
 .btn-main {
-background: #ffffff;
-color: #0f766e;
+background: #1abc9c;
+color: white;
+border-radius: 30px;
+border: 2px solid white;
 padding: 14px 30px;
-border-radius: 14px;
-border: 2px solid #1abc9c;
 font-weight: 600;
+transition: 0.3s;
 cursor: pointer;
 text-decoration: none;
 display: inline-block;
-transition: 0.3s ease;
-box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .btn-main:hover {
-background: #e8f6f3;
-transform: translateY(-4px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+background: #16a085;
+transform: translateY(-3px);
 }
 
 .center-btn {
@@ -156,14 +155,12 @@ gap: 30px;
 background: white;
 padding: 30px;
 border-radius: 20px;
-border: 2px solid #d7f3ee;
 box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 transition: 0.3s;
 }
 
 .card:hover {
 transform: translateY(-6px);
-border-color: #1abc9c;
 }
 
 /* ===== ЭКСТРЕННАЯ ПОМОЩЬ ===== */
@@ -173,8 +170,6 @@ background: linear-gradient(135deg, #1abc9c, #16a085);
 padding: 80px 0;
 color: white;
 text-align: center;
-border-top: 5px solid #0f766e;
-border-bottom: 5px solid #0f766e;
 }
 
 /* ===== КОМАНДА ===== */
@@ -190,7 +185,6 @@ background: white;
 padding: 25px;
 border-radius: 20px;
 text-align: center;
-border: 2px solid #d7f3ee;
 box-shadow: 0 12px 30px rgba(0,0,0,0.06);
 transition: 0.3s;
 }
@@ -220,9 +214,8 @@ background: white;
 padding: 40px;
 border-radius: 25px;
 box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-border: 3px solid #d9f5f1;
-transition: 0.3s;
 text-align: center;
+transition: 0.3s;
 }
 
 .promo-card:hover {
@@ -256,7 +249,6 @@ width: 400px;
 max-width: 90%;
 position: relative;
 box-shadow: 0 20px 50px rgba(0,0,0,0.2);
-border: 3px solid #1abc9c;
 }
 
 .modal-content input,
@@ -265,7 +257,7 @@ width: 100%;
 padding: 12px;
 margin: 10px 0;
 border-radius: 10px;
-border: 2px solid #d7f3ee;
+border: 1px solid #ccc;
 }
 
 .close {
