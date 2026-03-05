@@ -277,3 +277,72 @@ footer {
 .faq-item {
     margin-bottom:20px;
 }
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.license {
+    background: #f1f4f8;
+    text-align: center;
+}
+
+.partners {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.stats {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats h3 {
+    font-size: 40px;
+}
+.emergency {
+    background:#dc3545;
+    color:white;
+    text-align:center;
+    padding:60px 0;
+}
+
+.contact-form {
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    max-width:500px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+.doctor-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.doctor-card h4 {
+    margin-top: 15px;
+    color: #0d6efd;
+}
