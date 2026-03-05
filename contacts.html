@@ -8,64 +8,91 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
-<div class="container nav-container">
-<div class="logo">🐾 VetCare</div>
-
-<ul class="nav-links">
-<li><a href="index.html">🏠 Главная</a></li>
-<li><a href="about.html">🏥 О клинике</a></li>
-<li><a href="services.html">💉 Услуги</a></li>
-<li><a href="doctors.html">👩‍⚕️ Врачи</a></li>
-<li><a href="contacts.html">📞 Контакты</a></li>
-</ul>
-</div>
+  <div class="container nav-container">
+    <div class="logo">🐾 VetCare</div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Главная</a></li>
+      <li><a href="about.html">🏥 О клинике</a></li>
+      <li><a href="services.html">💉 Услуги</a></li>
+      <li><a href="doctors.html">👩‍⚕️ Врачи</a></li>
+      <li><a href="contacts.html">📞 Контакты</a></li>
+    </ul>
+  </div>
 </header>
 
-<!-- CONTACTS -->
-<section class="contacts-pro">
+<!-- HERO -->
+<section class="contacts-hero">
   <div class="container">
-    
-    <h2 class="section-title">📞 Контакты VetCare 🐾</h2>
+    <h1>📞 Свяжитесь с нами 🐾</h1>
+    <p>Мы всегда рядом, когда вашему питомцу нужна помощь 💚</p>
+  </div>
+</section>
 
-    <div class="contacts-pro-grid">
+<!-- CONTACTS -->
+<section class="contacts-section">
+  <div class="container">
 
-      <div class="contacts-pro-card">
-        <h3>🏥 Наш адрес</h3>
-        <p>г. Москва, ул. Заботы, 15</p>
+    <div class="contacts-grid">
 
-        <h3>📱 Телефон</h3>
-        <p>+7 (900) 999-99-99</p>
+      <!-- ЛЕВАЯ ЧАСТЬ -->
+      <div class="contacts-info">
 
-        <h3>📧 Email</h3>
-        <p>info@vetcare.ru</p>
+        <div class="contact-card">
+          <h3>🏥 Адрес</h3>
+          <p>г. Москва, ул. Заботы, 15</p>
+        </div>
 
-        <h3>⏰ Часы работы</h3>
-        <p>Пн–Вс: 09:00 – 21:00</p>
+        <div class="contact-card">
+          <h3>📱 Телефон</h3>
+          <p>+7 (900) 999-99-99</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>📧 Email</h3>
+          <p>info@vetcare.ru</p>
+        </div>
+
+        <div class="contact-card">
+          <h3>⏰ Режим работы</h3>
+          <p>Пн–Вс: 09:00 – 21:00</p>
+        </div>
+
+        <div class="contact-card emergency-card">
+          <h3>🚑 Экстренная помощь</h3>
+          <p>Круглосуточно 24/7</p>
+        </div>
+
       </div>
 
-      <div class="contacts-pro-card">
-        <h3>📝 Написать нам</h3>
+      <!-- ПРАВАЯ ЧАСТЬ -->
+      <div class="contacts-form">
+
+        <h2>📝 Оставить заявку</h2>
+        <p class="form-text">Администратор свяжется с вами в течение 15 минут ✨</p>
 
         <form onsubmit="showMessage(event)">
-          <input type="text" placeholder="Ваше имя" required>
-          <input type="tel" placeholder="Телефон" required>
-          <input type="email" placeholder="Email">
-          <textarea placeholder="Ваше сообщение"></textarea>
-          <button type="submit" class="btn-main">Отправить заявку ✨</button>
+          <input type="text" placeholder="Ваше имя 🐶" required>
+          <input type="tel" placeholder="Телефон 📱" required>
+          <input type="email" placeholder="Email 📧">
+          <textarea placeholder="Опишите проблему питомца 🐾"></textarea>
+          <button type="submit" class="btn-main">Отправить заявку 💚</button>
         </form>
 
-        <div id="success-message" class="contacts-success">
-          ✅ Ваша заявка отправлена!
+        <div id="success-message" class="success-message">
+          ✅ Заявка отправлена! Мы скоро вам позвоним 🐾
         </div>
+
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<p>© 2026 VetCare 🐾 | Забота с любовью 💚</p>
+  <p>© 2026 VetCare 🐾 | Забота с любовью 💚</p>
 </footer>
 
 <script>
