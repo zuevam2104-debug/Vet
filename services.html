@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Услуги | VetCare</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">🐾 VetCare</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О клинике</a></li>
+                <li><a href="services.html" class="active">Услуги</a></li>
+                <li><a href="doctors.html">Врачи</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger">☰</div>
+    </div>
+</header>
+
+<section class="page-hero services-hero">
+    <h1>Наши услуги</h1>
+</section>
+
+<section class="section container">
+
+    <div class="filter-buttons">
+        <button onclick="filterServices('all')">Все</button>
+        <button onclick="filterServices('therapy')">Терапия</button>
+        <button onclick="filterServices('surgery')">Хирургия</button>
+        <button onclick="filterServices('diagnostics')">Диагностика</button>
+    </div>
+
+    <div class="cards services-grid">
+
+        <div class="card service therapy">
+            <h3>Общий осмотр</h3>
+            <p>Полная диагностика состояния здоровья.</p>
+        </div>
+
+        <div class="card service surgery">
+            <h3>Хирургические операции</h3>
+            <p>Плановые и экстренные вмешательства.</p>
+        </div>
+
+        <div class="card service diagnostics">
+            <h3>УЗИ и рентген</h3>
+            <p>Современная аппаратура для точной диагностики.</p>
+        </div>
+
+        <div class="card service therapy">
+            <h3>Вакцинация</h3>
+            <p>Профилактические прививки.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 VetCare Pro</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

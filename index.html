@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Современная ветеринарная клиника 24/7. Лечение, диагностика, хирургия.">
+<title>Ветеринарная клиника "Забота"</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">🐾 VetCare</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О клинике</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="doctors.html">Врачи</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="burger"><i class="fas fa-bars"></i></div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Забота о здоровье ваших питомцев</h1>
+        <p>Современная диагностика и лечение 24/7</p>
+        <button class="btn open-modal">Записаться на приём</button>
+    </div>
+</section>
+
+<section class="section container">
+    <h2>Наши преимущества</h2>
+    <div class="cards">
+        <div class="card">
+            <i class="fas fa-user-md icon"></i>
+            <h3>Опытные врачи</h3>
+            <p>Стаж от 10 лет. Постоянное повышение квалификации.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-clinic-medical icon"></i>
+            <h3>Современное оборудование</h3>
+            <p>УЗИ, рентген, лаборатория внутри клиники.</p>
+        </div>
+        <div class="card">
+            <i class="fas fa-clock icon"></i>
+            <h3>Круглосуточно</h3>
+            <p>Работаем 24/7 без выходных.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Доверьте здоровье питомца профессионалам</h2>
+    <button class="btn open-modal">Записаться сейчас</button>
+</section>
+
+<footer>
+    <p>© 2026 VetCare | Портфолио проект</p>
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Онлайн запись</h2>
+        <form id="appointment-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel" placeholder="Телефон" required>
+            <textarea placeholder="Комментарий"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
