@@ -254,3 +254,26 @@ footer {
     color:white;
     cursor:pointer;
 }
+.price-table {
+    width:100%;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+
+.price-table th, .price-table td {
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.price-table th {
+    background:#0d6efd;
+    color:white;
+}
+
+.testimonials {
+    background:#f1f4f8;
+}
+
+.faq-item {
+    margin-bottom:20px;
+}
