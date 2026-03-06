@@ -292,3 +292,16 @@ font-size:30px;
 }
 
 }
+/* красивые рамки */
+
+.card{
+border:3px solid #1abc9c;
+}
+
+.team-card{
+border:3px solid #1abc9c;
+}
+
+.promo-card{
+border:3px solid #1abc9c;
+}
