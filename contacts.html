@@ -1,106 +1,288 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Контакты — VetCare 🐾</title>
-<link rel="stylesheet" href="css/style.css">
+
+<title>Контакты | Dental Clinic</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* фон секции */
+
+.contacts-premium{
+padding:120px 0;
+background:linear-gradient(135deg,#dff7f2,#c8f0e8);
+}
+
+/* сетка */
+
+.contacts-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+margin-top:60px;
+}
+
+/* карточки */
+
+.contact-card{
+background:white;
+padding:50px;
+border-radius:30px;
+box-shadow:0 30px 70px rgba(0,0,0,0.08);
+border:4px solid #1abc9c;
+transition:0.4s;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+}
+
+/* заголовки */
+
+.contact-card h3{
+margin-top:25px;
+color:#16a085;
+}
+
+/* текст */
+
+.contact-card p{
+margin-bottom:10px;
+}
+
+/* блок информации */
+
+.contact-extra{
+margin-top:30px;
+background:#f2fffc;
+padding:20px;
+border-radius:20px;
+border:2px solid #d8f4ef;
+}
+
+/* форма */
+
+.contact-card input,
+.contact-card textarea{
+
+width:100%;
+padding:15px;
+margin-top:15px;
+border-radius:15px;
+border:2px solid #d8f4ef;
+background:#f9fffe;
+
+}
+
+.contact-card textarea{
+min-height:120px;
+}
+
+/* фокус */
+
+.contact-card input:focus,
+.contact-card textarea:focus{
+
+outline:none;
+border-color:#1abc9c;
+box-shadow:0 0 0 4px rgba(26,188,156,0.2);
+
+}
+
+/* кнопка */
+
+.contact-card button{
+
+margin-top:25px;
+padding:15px 25px;
+background:#1abc9c;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+
+}
+
+.contact-card button:hover{
+background:#16a085;
+}
+
+/* уведомление */
+
+.success-message{
+
+display:none;
+margin-top:20px;
+padding:15px;
+background:#1abc9c;
+color:white;
+border-radius:15px;
+text-align:center;
+
+}
+
+/* карта */
+
+.map-block{
+
+margin-top:80px;
+border-radius:25px;
+overflow:hidden;
+box-shadow:0 20px 60px rgba(0,0,0,0.15);
+
+}
+
+/* адаптив */
+
+@media(max-width:900px){
+
+.contacts-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
 </head>
+
+
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="container nav-container">
-    <div class="logo">🐾 VetCare</div>
-    <ul class="nav-links">
-      <li><a href="index.html">🏠 Главная</a></li>
-      <li><a href="about.html">🏥 О клинике</a></li>
-      <li><a href="services.html">💉 Услуги</a></li>
-      <li><a href="doctors.html">👩‍⚕️ Врачи</a></li>
-      <li><a href="contacts.html">📞 Контакты</a></li>
-    </ul>
-  </div>
+
+<div class="container nav-container">
+
+<div class="logo">🦷 Dental Clinic</div>
+
+<ul class="nav-links">
+<li><a href="index.html">🏠 Главная</a></li>
+<li><a href="services.html">🦷 Услуги</a></li>
+<li><a href="doctors.html">👨‍⚕️ Врачи</a></li>
+<li><a href="contacts.html">📞 Контакты</a></li>
+</ul>
+
+</div>
+
 </header>
 
-<!-- HERO -->
-<section class="contacts-hero">
-  <div class="container">
-    <h1>📞 Свяжитесь с нами 🐾</h1>
-    <p>Мы всегда рядом, когда вашему питомцу нужна помощь 💚</p>
-  </div>
+
+<section class="contacts-premium">
+
+<div class="container">
+
+<h2 class="section-title">📞 Свяжитесь с нами</h2>
+
+
+<div class="contacts-grid">
+
+
+<div class="contact-card">
+
+<h3>📍 Адрес</h3>
+<p>г. Москва, ул. Медицинская 24</p>
+
+<h3>📞 Телефон</h3>
+<p>+7 (999) 123-45-67</p>
+
+<h3>📧 Email</h3>
+<p>info@dental-clinic.ru</p>
+
+<h3>🕒 Время работы</h3>
+<p>Пн-Пт: 9:00 – 20:00</p>
+<p>Сб-Вс: 10:00 – 18:00</p>
+
+
+<div class="contact-extra">
+
+<p>⭐ Более 5000 пациентов</p>
+<p>🦷 Современное оборудование</p>
+<p>👩‍⚕️ Опытные специалисты</p>
+<p>💬 Бесплатная консультация</p>
+
+</div>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>📝 Записаться на прием</h3>
+
+<form onsubmit="sendForm(event)">
+
+<input type="text" placeholder="Ваше имя" required>
+
+<input type="tel" placeholder="Ваш телефон" required>
+
+<textarea placeholder="Комментарий"></textarea>
+
+<button>Записаться</button>
+
+</form>
+
+<div class="success-message" id="success">
+
+✅ Заявка отправлена! Мы скоро свяжемся с вами.
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="map-block">
+
+<iframe
+src="https://www.google.com/maps?q=Moscow&output=embed"
+width="100%"
+height="450"
+style="border:0;">
+</iframe>
+
+</div>
+
+
+</div>
+
 </section>
 
-<!-- CONTACTS -->
-<section class="contacts-section">
-  <div class="container">
 
-    <div class="contacts-grid">
-
-      <!-- ЛЕВАЯ ЧАСТЬ -->
-      <div class="contacts-info">
-
-        <div class="contact-card">
-          <h3>🏥 Адрес</h3>
-          <p>г. Москва, ул. Заботы, 15</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>📱 Телефон</h3>
-          <p>+7 (900) 999-99-99</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>📧 Email</h3>
-          <p>info@vetcare.ru</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>⏰ Режим работы</h3>
-          <p>Пн–Вс: 09:00 – 21:00</p>
-        </div>
-
-        <div class="contact-card emergency-card">
-          <h3>🚑 Экстренная помощь</h3>
-          <p>Круглосуточно 24/7</p>
-        </div>
-
-      </div>
-
-      <!-- ПРАВАЯ ЧАСТЬ -->
-      <div class="contacts-form">
-
-        <h2>📝 Оставить заявку</h2>
-        <p class="form-text">Администратор свяжется с вами в течение 15 минут ✨</p>
-
-        <form onsubmit="showMessage(event)">
-          <input type="text" placeholder="Ваше имя 🐶" required>
-          <input type="tel" placeholder="Телефон 📱" required>
-          <input type="email" placeholder="Email 📧">
-          <textarea placeholder="Опишите проблему питомца 🐾"></textarea>
-          <button type="submit" class="btn-main">Отправить заявку 💚</button>
-        </form>
-
-        <div id="success-message" class="success-message">
-          ✅ Заявка отправлена! Мы скоро вам позвоним 🐾
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  <p>© 2026 VetCare 🐾 | Забота с любовью 💚</p>
+
+<div class="container">
+
+<p>© 2025 Dental Clinic 🦷</p>
+<p>Современная стоматология для всей семьи</p>
+
+</div>
+
 </footer>
 
+
 <script>
-function showMessage(event) {
-  event.preventDefault();
-  document.getElementById("success-message").style.display = "block";
+
+function sendForm(event){
+
+event.preventDefault();
+
+document.getElementById("success").style.display="block";
+
 }
+
 </script>
 
+
 </body>
+
 </html>
